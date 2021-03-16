@@ -1,0 +1,142 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="Navegacion1.master.cs" Inherits="Navegacion1" %>
+
+<style type="text/css">
+    .auto-style5 {
+        width: 222px;
+    }
+    .auto-style8 {
+        width: 222px;
+        height: 34px;
+    }
+    .auto-style9 {
+        height: 34px;
+    }
+    .auto-style10 {
+        height: 76px;
+    }
+    .auto-style11 {
+        width: 222px;
+        font-family: "Times New Roman";
+        font-size: medium;
+    }
+    .auto-style12 {
+        font-family: "Times New Roman";
+        font-size: medium;
+    }
+    .auto-style13 {
+        width: 222px;
+        font-family: "Times New Roman";
+        font-size: medium;
+        height: 32px;
+    }
+    .auto-style14 {
+        width: 222px;
+        font-family: "Times New Roman";
+        font-size: medium;
+        height: 31px;
+    }
+</style>
+<!DOCTYPE html>
+
+<html lang="">
+
+<head>
+<title>Twinkling Nova - home</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<link href="layout/styles/layout.css" rel="stylesheet" type="text/css" media="all">
+</head>
+<body id="top">
+
+    <form id="form1" runat="server">
+
+<div class="wrapper row0">
+  <div id="topbar" class="hoc clear"> 
+    
+    <ul>
+      <li><i class="fa fa-clock-o"></i> Lunes. - viernes. 9am - 10pm</li>
+      <li><i class="fa fa-phone"></i> +593 0990285592</li>
+      <li><i class="fa fa-envelope-o"></i> wlady1516@gmail.com</li>
+        <li><a href="Login.aspx" title="Inicio de sesión"><i class="fa fa-lg fa-sign-in"></i></a></li>
+      <li><a href="Registrar.aspx" title="Registrarse"><i class="fa fa-lg fa-edit"></i></a></li>
+        <asp:Label ID="lbl_sesion" runat="server" Text=""></asp:Label>
+        <li><a href="Login.aspx" title="Cerrar sesión"><i class="fa fa-lg fa-sign-out"></i></a></li>
+    </ul>
+    
+  </div>
+</div>
+
+<div class="wrapper row1"><!--- inicio de la division del logo-->
+  <header id="header" class="hoc clear">  <!---comienzo del encabezado para el titulo de Twinkling Nova-->
+    
+    <div id="logo" class="fl_left"> <!-- Inicio de la division del logo -->
+      <h1><a href="AstroInicio.aspx">TWINKLING NOVA</a></h1>
+    </div>
+    <div class="fl_right"><a class="btn" href="https://www.youtube.com/watch?v=SO4PFN_ON8w">Aprender Más</a></div>
+    
+  </header> <!-- Fin del encabezado de Twinkling Nova --->
+</div> <!-- fin de la division del logo -->
+
+<!-- inicio de division para del fondo, las listas y opciones de desplazamiento de la pagina --->
+<div class="bgded" style="background-image:url('images/demo/backgrounds/imagen01.png');"> 
+  <!-- Referencia para el fondo de la página-->
+  <div class="wrapper row2"> <!-- el wrapper row indica la fila usada para definición-->
+    <nav id="mainav" class="hoc clear"> 
+      <!--Definicion de la lista ordenada de objetos en el wrapper row-->
+      <ul class="clear">
+        <li class="active"><a href="AstroInicio.aspx" style="font-style: normal; font-weight: bold; color: #FF6600;">Inicio</a></li>
+        <li><a class="drop" href="#" style="font-weight: bold; font-style: normal; color: #FF6600">Productos</a>
+          <ul> <!-- inicio de lista ordenada de objetos que referencia las paginas conectadas a ellas en PRODUCTOS -->
+            <li><a href="Galería.aspx">Productos/Galería</a></li>
+            
+            
+          </ul> <!-- fin de lista ordenada de objetos que referencia las paginas conectadas a ellas -->
+        </li>
+        <li><a class="drop" href="#" style="font-style: normal; font-weight: bold; color: #FF6600">Empresa</a>
+          <ul>
+            <li><a href="QuienesSomos.aspx">Quienes somos</a></li>
+            <li><a href="#bottom">Contactanos</a></li>
+            </ul>
+        <li class ="active"><a href="AstroInicio.aspx" style="font-weight: bold; font-style: normal; color: #FF6600;">Directorio</a></li>
+         
+        </ul>
+    </nav>
+  </div>
+  <!-- ################################################################################################ -->
+  <!-- ################################################################################################ -->
+  <!-- ################################################################################################ -->
+  
+  <!-- ################################################################################################ -->
+</div>
+<div>
+    <div>
+        
+
+        
+        <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+        </asp:ContentPlaceHolder>
+        
+
+        
+    </div>
+</div>
+<div class="wrapper row5">
+  <div id="copyright" class="hoc clear"> 
+    <!-- ################################################################################################ -->
+    <p class="fl_left">Copyright &copy; 2018 - Todos los derechos reservados - GREGZOVAUNI SOFTWARE</p>
+    <p class="fl_right">Diseñado por Gregorio Zorrila y Wladimir De la S</p>
+    
+    <!-- ################################################################################################ -->
+  </div>
+</div>
+<!-- ################################################################################################ -->
+<!-- ################################################################################################ -->
+<!-- ################################################################################################ -->
+<a id="backtotop" href="#top"><i class="fa fa-chevron-up"></i></a>
+<!-- JAVASCRIPTS -->
+<script src="layout/scripts/jquery.min.js"></script>
+<script src="layout/scripts/jquery.backtotop.js"></script>
+<script src="layout/scripts/jquery.mobilemenu.js"></script>
+    </form>
+</body>
+</html>
